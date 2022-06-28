@@ -3,7 +3,13 @@
 #include <stdlib.h>
 #include <string>
 
-
+bool mio(int MAT[8][8], int x, int y,int pezzo) {
+	bool check = false;
+	if (MAT[x][y] != 999) {
+		if (MAT[x][y] > 200 && pezzo > 200 || MAT[x][y] < 200 && pezzo < 200)  check = true;
+	}
+	return check;
+}
 int return_column(char column[]) {
 	int value = 0;
 
@@ -36,15 +42,6 @@ int return_column(char column[]) {
 		break;
 
 	}
-	/*if (column[0] == 'A') value = 0;
-	else if (column[0] == 'B') value = 1;
-	else if (column[0] == 'C') value = 2;
-	else if (column[0] == 'D') value = 3;
-	else if (column[0] == 'E') value = 4;
-	else if (column[0] == 'F') value = 5;
-	else if (column[0] == 'G') value = 6;
-	else if (column[0] == 'H') value = 7;
-	else printf("\nerror!");*/
 
 	return value;
 }
