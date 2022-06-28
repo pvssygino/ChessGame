@@ -6,6 +6,7 @@
 
 int inizializza_tavola(int mat[DIM][DIM],in_player playerbianco, in_player playernero );
 void stampa_tavola(int mat[DIM][DIM]);
+bool mio(int MAT[8][8], int x, int y, int pezzo);
 
 
 #endif
