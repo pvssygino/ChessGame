@@ -3,13 +3,6 @@
 #include <stdlib.h>
 #include <string>
 
-bool mio(int MAT[8][8], int x, int y,int pezzo) {
-	bool check = false;
-	if (MAT[x][y] != 999) {
-		if (MAT[x][y] > 200 && pezzo > 200 || MAT[x][y] < 200 && pezzo < 200)  check = true;
-	}
-	return check;
-}
 int return_column(char column[]) {
 	int value = 0;
 
