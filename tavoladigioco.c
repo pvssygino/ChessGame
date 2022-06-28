@@ -47,6 +47,13 @@ int inizializza_tavola(int mat[DIM][DIM], in_player playerbianco, in_player play
 	return 0;
 
 }
+bool mio(int MAT[8][8], int x, int y, int pezzo) {
+	bool check = false;
+	if (MAT[x][y] != VUOTO) {
+		if (MAT[x][y] > 200 && pezzo > 200 || MAT[x][y] < 200 && pezzo < 200)  check = true;
+	}
+	return check;
+}
 void stampa_tavola(int mat[DIM][DIM]) {
 	printf("                      A    B    C    D    E    F    G    H \n\n");
 	for (int i = 0; i < DIM; i++) {
