@@ -81,8 +81,7 @@ void gioca(){
 					TAVOLA[x - 1][y_int] = pezzo;
 					TAVOLA[input_r - 1][c] = VUOTO;
 					stampa_tavola(TAVOLA);
-					if (turn == 0) turn = 1;
-					else if (turn == 1) turn = 0;
+					turn == 0 ? turn = 1 : turn = 0;
 				}
 				else {
 					printf("------------------------------------->Non puoi fare questo spostamento!\n\n");
@@ -97,4 +96,3 @@ void gioca(){
 	}
 	
 }
-
