@@ -60,10 +60,9 @@ void gioca(){
 		scanf("%s", &input_c);
 		c = return_column(input_c);
 		pezzo = TAVOLA[input_r - 1][c];
-		if (pezzo == VUOTO) {
 
-			printf("-------------------------------------> casella vuota!\n");
-		}
+		if (pezzo == VUOTO) 
+         printf("-------------------------------------> casella vuota!\n");
 		else {
 			if (turn == 0)
 				verify = find(playerbianco, pezzo);
@@ -98,3 +97,4 @@ void gioca(){
 	}
 	
 }
+
