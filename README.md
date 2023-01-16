@@ -2,7 +2,8 @@
 Riproduzione in console application del gioco degli scacchi<br/>
 
 I pezzi bianchi inziano per 1XX, quelli neri con 2XX, mentre 999 rappresenta una casella non occupata.<br/>
-![immagine2](https://user-images.githubusercontent.com/16807583/212702743-4c5b36a6-1748-4998-b3c5-75b182a0ecb7.png)
+![immagine2](https://user-images.githubusercontent.com/16807583/212702914-0434d6fb-ecf6-43e0-a657-3a83e1a5d8b7.png)
+
 
 # Pezzi
 I pezzi sono identificati da un numero:<br/>
